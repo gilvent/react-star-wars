@@ -1,0 +1,29 @@
+@use 'src/assets/scss/variables/colors';
+
+.home-page {
+  background-color: colors.$sw-black;
+  min-height: 100%;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  line-height: 0.8;
+  font-size: 102px;
+  color: colors.$sw-primary;
+
+  div:nth-child(1) {
+    margin-left: -48px;
+  }
+  div:nth-child(2) {
+    margin-left: 64px;
+  }
+}
+
+.films-container {
+  display: grid;
+  padding: 24px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
