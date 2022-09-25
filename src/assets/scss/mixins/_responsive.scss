@@ -1,0 +1,13 @@
+@use "src/assets/scss/variables/breakpoints";
+
+@mixin tablet {
+  @media only screen and (min-width: breakpoints.$up-sm) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (min-width: breakpoints.$up-md) {
+    @content;
+  }
+}

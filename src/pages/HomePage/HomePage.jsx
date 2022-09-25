@@ -12,7 +12,7 @@ function HomePage () {
   }, [])
 
   useEffect(() => {
-    const list = films.map(film => <FilmCard film={film}/>)
+    const list = films.map(film => <FilmCard film={film} key={film.episode_id}/>)
     setFilmList(list)
   }, [films])
 
