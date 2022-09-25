@@ -1,6 +1,7 @@
 @use 'src/assets/scss/variables/colors';
 
 .film-card {
+  padding: 16px;
   color: colors.$sw-primary;
   cursor: pointer;
 }
